@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "heroku": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "heroku": "tsc && concurrently \"http-server\"",
     "lite": "lite-server",
     "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "tsc:w": "tsc -w",
+    "preinstall": "npm install -g http-server",
+    "postinstall": "ng build && mv dist/* ."
   },
   "licenses": [
     {
