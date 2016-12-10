@@ -11,8 +11,7 @@
     "lite": "lite-server",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "preinstall": "npm install -g http-server",
-    "postinstall": "ng build && mv dist/* ."
+    "preinstall": "npm install -g http-server"
   },
   "licenses": [
     {
