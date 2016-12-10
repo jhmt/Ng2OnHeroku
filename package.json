@@ -1,6 +1,10 @@
 {
   "name": "angular-quickstart",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  },
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "heroku": "tsc && concurrently \"http-server\"",
